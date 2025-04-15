@@ -88,3 +88,13 @@ SELECT
 FROM category c
 JOIN film_category fc ON c.category_id = fc.category_id
 GROUP BY c.name;
+
+
+
+
+
+SELECT AVG (rental_duration) AS suma FROM
+GROUP BY film_id
+HAVING suma >3
+SELECT f.title FROM actor a
+INNER JOIN 
